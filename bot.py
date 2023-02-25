@@ -15,6 +15,7 @@ def talk_to_me(update, context):
     update.message.reply_text(text)
 
 def main():
+    print('started bot')
     mybot = Updater(settings.API_KEY, use_context=True)
 
     dp = mybot.dispatcher
